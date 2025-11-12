@@ -4,7 +4,7 @@
 %global conf_dir etc/php.d
 
 Name: %{scl_version}-php-memcached
-Version: 3.3.0
+Version: 3.4.0
 Summary: php-memcached extension for %{scl_version}
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
@@ -53,6 +53,9 @@ install -m 644 %{SOURCE1} %{buildroot}/%{ext_prefix}/%{conf_dir}/
 %config /%{ext_prefix}/%{conf_dir}/memcached.ini
 
 %changelog
+* Wed Nov 12 2025 Dan Muey <daniel.muey@webpros.com> - 3.4.0-1
+- EA-13256: Update ea-php85-php-memcached from v3.3.0 to v3.4.0
+
 * Mon Nov 10 2025 Dan Muey <dan@cpanel.net> - 3.3.0-1
 - ZC-12296: Build ea-php85-php-memcached
 
